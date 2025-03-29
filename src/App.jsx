@@ -1,4 +1,5 @@
 import './App.css'
+import FilterBar from './components/filter-bar/FilterBar'
 import Header from './components/header/Header'
 
 function App() {
@@ -6,14 +7,7 @@ function App() {
   return (
     <>
   <Header />
-  <section>
-    <span>Extensions List</span>
-    <ul>
-      <button>All</button>
-      <button>Active</button>
-      <button>Inactive</button>
-    </ul>
-  </section>
+  <FilterBar />
   </>
   )
 }
