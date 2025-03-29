@@ -1,1 +1,28 @@
+@import url(https://fonts.google.com/noto/specimen/Noto+Sans);
 
+:root {
+  --dk-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --lg-gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  --nt-900: hsl(227, 75%, 14%);
+  --nt-800: hsl(226, 25%, 17%);
+  --nt-700: hsl(225, 23%, 24%);
+  --nt-600: hsl(226, 11%, 37%);
+  --nt-300: hsl(0, 0%, 78%);
+  --rd-400: hsl(3, 86%, 64%);
+  --rd-500: hsl(3, 71%, 56%);
+  --rd-700: hsl(3, 77%, 44%);
+  --ft-primary: 'Noto Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dk-gradient);
+  font-family: var(--ft-primary);
+  height: 100vh;
+  margin: 40px 100px;
+}
