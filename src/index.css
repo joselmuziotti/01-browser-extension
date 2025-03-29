@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/noto/specimen/Noto+Sans);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap);
 
 :root {
   --dk-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
@@ -11,7 +11,7 @@
   --rd-400: hsl(3, 86%, 64%);
   --rd-500: hsl(3, 71%, 56%);
   --rd-700: hsl(3, 77%, 44%);
-  --ft-primary: 'Noto Sans', sans-serif;
+  --ft-primary: 'Noto Sans';
 }
 
 * {
@@ -24,5 +24,5 @@ body {
   background: var(--dk-gradient);
   font-family: var(--ft-primary);
   height: 100vh;
-  margin: 40px 100px;
+  margin: 0 100px;
 }
