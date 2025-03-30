@@ -23,6 +23,6 @@
 body {
   background: var(--dk-gradient);
   font-family: var(--ft-primary);
-  height: 100vh;
+  height: 100%;
   margin: 0 100px;
 }
