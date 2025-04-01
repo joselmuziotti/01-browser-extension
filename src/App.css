@@ -1,0 +1,169 @@
+:root[data-theme="dark"] {
+  /* Dark theme styles */
+  body {
+    background: var(--dk-gradient);
+  }
+
+  header article {
+    background-color: var(--nt-800);
+  }
+
+  header button {
+    background-color: var(--nt-700);
+  }
+
+  header button:hover {
+    background-color: var(--nt-600);
+  }
+
+  header button:focus {
+    outline: 1.5px solid var(--rd-400);
+    background: var(--nt-600);
+  }
+
+  section ul button {
+    background: var(--nt-700);
+    color: var(--white);
+    border: 1px solid var(--nt-600);
+  }
+
+  section ul button:hover {
+    background: var(--rd-400);
+    color: var(--nt-900);
+  }
+
+  section ul button:focus {
+    outline: 1.5px solid var(--rd-400);
+    background: var(--nt-600);
+  }
+
+  main section {
+    background: var(--nt-800);
+    border: 1px solid var(--nt-600);
+  }
+
+  main section span {
+    color: var(--white);
+  }
+
+  main section p {
+    color: var(--nt-300);
+  }
+
+  main section button {
+    background: var(--nt-800);
+    border: 1px solid var(--nt-600);
+    color: var(--white);
+  }
+
+  main section button:hover {
+    background: var(--rd-400);
+    color: var(--nt-900);
+  }
+
+  main section button:focus {
+    outline: 1.5px solid var(--rd-400);
+    background: var(--nt-600);
+  }
+
+  .slider {
+    background: var(--nt-600);
+  }
+
+  .slider:before {
+    background-color: var(--white);
+  }
+
+  .switch input:checked + .slider {
+    background-color: var(--rd-400);
+    outline: 1.5px solid var(--rd-400);
+  }
+}
+
+:root[data-theme="light"] {
+  /* Light theme styles */
+  body {
+    background: var(--lg-gradient);
+  }
+
+  header article {
+    background-color: var(--white);
+    box-shadow: 0px 0px 2px var(--nt-300);
+  }
+
+  header button {
+    background-color: var(--nt-300);
+  }
+
+  header button:hover {
+    background-color: var(--nt-600);
+  }
+
+  header button:focus {
+    outline: 1.5px solid var(--rd-700);
+  }
+
+  section span {
+    color: var(--nt-900);
+  }
+
+  section ul button {
+    background: var(--white);
+    color: var(--nt-900);
+    border: none;
+    box-shadow: 0px 0px 2px var(--nt-300);
+  }
+
+  section ul button:hover {
+    background: var(--rd-700);
+    color: var(--white);
+    border: none;
+  }
+
+  section ul button:focus {
+    outline: 1.5px solid var(--rd-700);
+  }
+
+  main section {
+    background: var(--white);
+    box-shadow: 0px 0px 2px var(--nt-300);
+  }
+
+  main section span {
+    color: var(--nt-900);
+  }
+
+  main section p {
+    color: var(--nt-600);
+  }
+
+  main section button {
+    background: transparent;
+    border: 1px solid var(--nt-300);
+    color: var(--nt-900);
+  }
+
+  main section button:hover {
+    background: var(--rd-700);
+    color: var(--white);
+    border: none;
+  }
+
+  main section button:focus {
+    outline: 1.5px solid var(--rd-700);
+    background: var(--nt-300);
+  }
+
+  .slider {
+    background: var(--nt-300);
+  }
+
+  .slider:before {
+    background-color: var(--white);
+  }
+
+  .switch input:checked + .slider {
+    background-color: var(--rd-700);
+    outline: 1.5px solid var(--rd-700);
+  }
+}
