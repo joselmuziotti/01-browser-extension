@@ -1,27 +1,43 @@
-import './index.css'
+import "./index.css";
+import data from "../../js/data.json";
+import { useState } from "react";
 
 const Card = () => {
-  return (
-    <section>
+  const [cards, setCards] = useState(data);
 
-    <article>
-      <img src="/images/logo-devlens.svg" alt="" />
-        <div>
-          <span>DevLens</span>
-          <p>Quickly inspect page layouts and visualize element boundaries.</p>
+  const toggleActiveState = (name) => {
+    setCards((prevCards) =>
+      prevCards.map((card) =>
+        card.name === name ? { ...card, isActive: !card.isActive } : card
+      )
+    );
+  };
+
+  return cards.map(({ name, description, logo, isActive }) => {
+    return (
+      <section key={name}>
+        <article>
+          <img src={`${logo}`} alt="" />
+          <div>
+            <span>{name}</span>
+            <p>{description}</p>
+          </div>
+        </article>
+
+        <div className="bottom-card">
+          <button>Remove</button>
+          <label className="switch">
+            <input
+              type="checkbox"
+              checked={isActive}
+              onChange={() => toggleActiveState(name)}
+            />
+            <span className="slider"></span>
+          </label>
         </div>
-    </article>
+      </section>
+    );
+  });
+};
 
-    <div className='bottom-card' >
-      <button>Remove</button>
-        <label className="switch">
-          <input type="checkbox" />
-          <span className="slider"></span>
-        </label>
-    </div>
-
-  </section>
-  )
-}
-
-export default Card
+export default Card;
