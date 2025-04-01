@@ -35,3 +35,9 @@ body {
 [data-theme="light"] {
   color-scheme: light;
 }
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  body {
+    margin: 0 20px;
+  }
+}
