@@ -5,17 +5,6 @@ const Board = () => {
   return (
     <main>
       <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
     </main>
   )
 }
