@@ -1,8 +1,6 @@
 main section {
   display: flex;
   flex-direction: column;
-  background: var(--nt-800);
-  border: 1px solid var(--nt-600);
   border-radius: 20px;
   padding: 20px;
   width: 100%;
@@ -24,13 +22,11 @@ main section div {
 }
 
 main section span {
-  color: #fff;
   font-size: 1.2rem;
   margin: 0;
 }
 
 main section p {
-  color: var(--nt-300);
   font-size: 0.9rem;
   margin-top: 5px;
 }
@@ -45,18 +41,19 @@ main section p {
 }
 
 main section button {
-  background: var(--nt-800);
-  border: 1px solid var(--nt-600);
   border-radius: 50px;
   font-family: var(--ft-primary);
   font-size: 1rem;
-  color: #fff;
   padding: 8px 15px;
   cursor: pointer;
 }
 
 main section button:hover {
-  background: var(--nt-600);
+  transition: all 0.3s ease-in-out;
+}
+
+main section button:focus {
+  outline-offset: 2px;
 }
 
 .switch {
@@ -64,7 +61,6 @@ main section button:hover {
   display: inline-block;
   width: 60px;
   height: 34px;
-  background: var(--nt-800);
   display: grid;
   align-items: end;
   justify-items: end;
@@ -78,7 +74,6 @@ main section button:hover {
   position: absolute;
   width: 40px;
   height: 24px;
-  background: var(--nt-600);
   border-radius: 50px;
 }
 
@@ -89,7 +84,6 @@ main section button:hover {
   width: 20px;
   left: 2px;
   bottom: 2px;
-  background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
   top: 50%;
@@ -98,16 +92,9 @@ main section button:hover {
 }
 
 .switch input:checked + .slider {
-  background-color: var(--rd-400);
-  outline: 1.5px solid var(--rd-400);
   outline-offset: 2px;
 }
 
 .switch input:checked + .slider:before {
   transform: translate(15px, -50%);
-}
-
-main section button:focus {
-  outline: 1.5px solid var(--rd-400);
-  outline-offset: 2px;
 }
