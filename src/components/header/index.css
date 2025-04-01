@@ -6,7 +6,6 @@ header article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--nt-800);
   border-radius: 15px;
   padding: 10px 15px;
 }
@@ -18,20 +17,17 @@ header article img{
 
 header button{
   display: flex;
-  background-color: var(--nt-700);
   padding: 10px;
   border-radius: 10px;
   border: none;
 }
 
 header button:hover {
-  background-color: var(--nt-600);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 header button:focus {
-  outline: 1.5px solid var(--rd-400);
   outline-offset: 2px;
 }
 
