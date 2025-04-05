@@ -1,23 +1,11 @@
 import "./index.css";
-import data from "../../js/data.json";
-import { useState } from "react";
 
-const Card = () => {
-  const [cards, setCards] = useState(data);
+const Card = ({name, logo, description, isActive, toggleActive}) => {
 
-  const toggleActiveState = (name) => {
-    setCards((prevCards) =>
-      prevCards.map((card) =>
-        card.name === name ? { ...card, isActive: !card.isActive } : card
-      )
-    );
-  };
-
-  return cards.map(({ name, description, logo, isActive }) => {
     return (
-      <section key={name}>
+      <section>
         <article>
-          <img src={`${logo}`} alt="" />
+          <img src={`${logo}`} alt={`${name}`} />
           <div>
             <span>{name}</span>
             <p>{description}</p>
@@ -30,14 +18,13 @@ const Card = () => {
             <input
               type="checkbox"
               checked={isActive}
-              onChange={() => toggleActiveState(name)}
+              onChange={() => toggleActive(name)}
             />
             <span className="slider"></span>
           </label>
         </div>
       </section>
     );
-  });
-};
+  };
 
 export default Card;
