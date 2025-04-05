@@ -1,15 +1,13 @@
-import './App.css'
 import Board from './components/board/Board'
-import FilterBar from './components/filter-bar/FilterBar'
 import Header from './components/header/Header'
+import './App.css'
 
 function App() {
 
   return (
     <>
   <Header />
-  <FilterBar />
-  <Board />
+  <Board/>
   </>
   )
 }
