@@ -1,13 +1,14 @@
 import './index.css'
 
-const FilterBar = () => {
+const FilterBar = ({setFilter}) => {
+
   return (
     <section>
       <span>Extensions List</span>
         <ul>
-          <button>All</button>
-          <button>Active</button>
-          <button>Inactive</button>
+          <button onClick={() => setFilter('all')}>All</button>
+          <button onClick={() => setFilter(true)}>Active</button>
+          <button onClick={() => setFilter(false)}>Inactive</button>
         </ul>
   </section>
   )
