@@ -56,14 +56,14 @@ const Board = () => {
       </main>
 
       <Modal isOpen={isModalOpen} onClose={cancelDelete}>
-        <h3>Confirmar Eliminación</h3>
-        <p>¿Estás seguro de que deseas eliminar la extensión "<span className='span'>{extensionToDelete}</span>"?</p>
+        <h3>Confirm Deletion</h3>
+        <p>¿Are you sure you want to remove the extension "<span className='span'>{extensionToDelete}</span>"?</p>
         <div className="modal-actions">
           <button className="modal-btn modal-btn-cancel" onClick={cancelDelete}>
-            Cancelar
+            Cancel
           </button>
           <button className="modal-btn modal-btn-confirm" onClick={confirmDelete}>
-            Eliminar
+            Remove
           </button>
         </div>
       </Modal>
