@@ -1,6 +1,6 @@
 import "./index.css";
 
-const Card = ({name, logo, description, isActive, toggleActive}) => {
+const Card = ({name, logo, description, isActive, toggleActive, remove}) => {
 
     return (
       <section>
@@ -13,7 +13,7 @@ const Card = ({name, logo, description, isActive, toggleActive}) => {
         </article>
 
         <div className="bottom-card">
-          <button>Remove</button>
+          <button onClick={() => remove(name)}>Remove</button>
           <label className="switch">
             <input
               type="checkbox"

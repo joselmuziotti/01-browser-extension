@@ -20,6 +20,11 @@ const Board = () => {
     if (filter === 'all') return true
     return ext.isActive === filter
   })
+
+  const handleRemove = (name) => {
+    const updated = info.filter(ext => ext.name !== name);
+    setInfo(updated);
+  }
   
   return (
     <>
@@ -36,9 +41,10 @@ const Board = () => {
       description={info.description}
       isActive={info.isActive}
       toggleActive={toggleActive}
+      remove={handleRemove}
       />)
       
-      };
+      }
 
     </main>
     </>
