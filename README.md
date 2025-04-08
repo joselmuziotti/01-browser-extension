@@ -1,11 +1,14 @@
 ## Browser Extensions Manager 🌐🔧
+
 Un administrador de extensiones de navegador construido con React que permite:
+
 ✅ Ver todas tus extensiones
 ✅ Filtrar por estado (Activas/Inactivas)
 ✅ Alternar entre activar/desactivar extensiones
 ✅ Eliminar extensiones con confirmación
 
 ## 📦 Características
+
 1. Listado de Extensiones
 Muestra todas las extensiones con su logo, nombre y descripción.
 
@@ -27,15 +30,17 @@ Eliminar Extensiones: Con modal de confirmación para evitar borrados accidental
 Cambia entre modo claro y oscuro (implementado en Header.jsx).
 
 ## 🛠️ Tecnologías Usadas
-React 19 (con Hooks: useState, useEffect)
 
-Vite (entorno de desarrollo rápido)
+✅React 19 (con Hooks: useState, useEffect)
 
-CSS Modules (para estilos encapsulados)
+✅Vite (entorno de desarrollo rápido)
 
-Jest + Testing Library (para pruebas unitarias)
+✅CSS Modules (para estilos encapsulados)
+
+✅Jest + Testing Library (para pruebas unitarias)
 
 ## 🚀 Cómo Ejecutar el Proyecto
+
 1. Instalación
 ```bash
 git clone https://github.com/joselmuziotti/01-browser-extension.git
@@ -62,7 +67,7 @@ npm run test:watch # Modo observación (ideal para desarrollo)
 ```
 
 ## 📂 Estructura del Proyecto
-Copy
+
 src/  
 ├── components/  
 │   ├── card/            # Componente de tarjeta de extensión  
@@ -74,6 +79,7 @@ src/
 └── App.jsx              # Componente principal
 
 ## 🎨 Componentes Principales
+
 ```jsx
 // Ejemplo de Card.jsx
 const Card = ({ name, logo, description, isActive, onRemove }) => (
@@ -88,7 +94,9 @@ const Card = ({ name, logo, description, isActive, onRemove }) => (
 ```
 
 ## 🎨 Ejemplos de Uso
+
 1. Filtrado
+
 ![Barra filtrado.](./public/images/filter.gif "Barra de botones para filtrado.")
 
 2. Eliminar con Confirmación
@@ -101,10 +109,11 @@ const Card = ({ name, logo, description, isActive, onRemove }) => (
 
 4. Temas Oscuro y Claro
 
-![Temas.](./public/images/toggle.gif "Alterna temas oscuro y claro.")
+![Temas.](./public/images/themes.gif "Alterna temas oscuro y claro.")
 
 ## 💡 Sugerencias para Mejorar
-1. Persistencia de Datos
+
+# 1. Persistencia de Datos
 Guardar el estado en localStorage para que no se pierdan los cambios al recargar.
 
 Ejemplo:
@@ -115,18 +124,19 @@ useEffect(() => {
   localStorage.setItem('extensions', JSON.stringify(extensions));
 }, [extensions]);
 ```
-2. Animaciones
+# 2. Animaciones
 Añadir transiciones al eliminar/mostrar tarjetas con CSS Transitions o Framer Motion.
 
-3. Búsqueda por Nombre
+# 3. Búsqueda por Nombre
 Agregar un input para filtrar extensiones por nombre.
 
-4. Undo al Eliminar
+# 4. Undo al Eliminar
 Implementar un snackbar con "Deshacer" al borrar una extensión.
 
-¿Te gustó el proyecto? ¡Déjale una ⭐ en GitHub!
+## gustó el proyecto? ¡Déjale una ⭐ en GitHub!
 
-🔹 Nota: Este proyecto es ideal para practicar gestión de estado en React, componentes reutilizables y buenas prácticas de UI.
-🔹 ¿Preguntas? ¡Abre un issue o contribuye con un PR! 🚀
+# 🔹 Nota: Este proyecto es ideal para practicar gestión de estado en React, componentes reutilizables y buenas prácticas de UI.
 
-Happy Coding! 👨‍💻👩‍💻
+# 🔹 ¿Preguntas? ¡Abre un issue o contribuye con un PR! 🚀
+
+# Happy Coding! 👨‍💻👩‍💻
